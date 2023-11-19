@@ -4,11 +4,12 @@ import org.junit.After;
 import org.junit.Before;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
 public class TestArrayList {
-    ArrayList<String> rockyOpponents;
+    List<String> rockyOpponents;
     @Before
     public void setUp() throws Exception {
         rockyOpponents = new ArrayList<>();
