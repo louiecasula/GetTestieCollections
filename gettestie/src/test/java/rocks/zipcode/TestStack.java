@@ -14,11 +14,27 @@ public class TestStack {
     }
 
     @org.junit.Test
-    public void TestStack1() {
+    public void TestPush() {
         Stack<String> stack = new Stack<>();
         stack.push("Hello world");
-        assertEquals(false, stack.isEmpty()); // false
+        assertFalse(stack.isEmpty());
     }
 
     // Make a bigger test exercising more Stack methods.....
+    @org.junit.Test
+    public void TestPop() {
+        Stack<String> stack = new Stack<>();
+        stack.push("Hello world");
+        String popped = stack.pop();
+        assertEquals("Hello world", popped);
+        assertTrue(stack.isEmpty());
+    }
+
+    @org.junit.Test
+    public void TestPeek() {
+        Stack<String> stack = new Stack<>();
+        stack.push("Hello world");
+        assertEquals("Hello world", stack.peek());
+        assertFalse(stack.isEmpty());
+    }
 }
