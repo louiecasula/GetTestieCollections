@@ -3,8 +3,6 @@ package rocks.zipcode;
 import org.junit.After;
 import org.junit.Before;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Vector;
 
 import static org.junit.Assert.assertEquals;
